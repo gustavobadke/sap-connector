@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "libs/x86/sapjco3.jar"
+    ],
+    "java.project.exportJar": {
+        "targetPath": "${workspaceFolder}/dist/gnexum-sap.jar",
+        "generateManifest": true
+    }
+}

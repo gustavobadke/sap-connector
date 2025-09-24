@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/runtime/Dockerfile
+    container_name: java_sap_app
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app   # monta seu código local dentro do container
+    command: >
+      sh -c "javac -cp libs/x86/sapjco3.jar -d out $(find src -name '*.java') &&
+             java -cp out:libs/x86/sapjco3.jar br.com.gnexum.MainServer"
