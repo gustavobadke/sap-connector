@@ -19,11 +19,11 @@ public class SapConnection {
             System.out.println(destination.getUser());
             System.out.println(destination.getLanguage());
 
-            destination.ping();
+            //destination.ping();
 
-            System.out.println("Ping bem-sucedido!");
+            //System.out.println("Ping bem-sucedido!");
 
-            System.out.println("Connected to SAP system: " + destination.getAttributes().getSystemID());
+            //System.out.println("Connected to SAP system: " + destination.getAttributes().getSystemID());
 
             JCoFunction testFunc = destination.getRepository().getFunction("STFC_CONNECTION");
             testFunc.execute(destination);
