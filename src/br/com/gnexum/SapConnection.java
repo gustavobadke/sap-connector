@@ -1,9 +1,6 @@
 package br.com.gnexum;
 
-import com.sap.conn.jco.JCoDestination;
-import com.sap.conn.jco.JCoDestinationManager;
-import com.sap.conn.jco.JCoException;
-import com.sap.conn.jco.JCoFunction;
+import com.sap.conn.jco.*;
 
 public class SapConnection {
     public static void main(String[] args) {
