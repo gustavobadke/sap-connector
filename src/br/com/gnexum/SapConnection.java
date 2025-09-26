@@ -13,12 +13,11 @@ public class SapConnection {
             JCoDestination destination = JCoDestinationManager.getDestination("SAP_CONFIG");
 
             System.out.println("configurações carregadas");
-            System.out.println(destination.getAttributes().toString());
-            System.out.println(destination.getAttributes().getHost());
-            System.out.println(destination.getAttributes().getSystemNumber());
-            System.out.println(destination.getAttributes().getClient());
-            System.out.println(destination.getAttributes().getUser());
-            System.out.println(destination.getAttributes().getLanguage());
+            System.out.println(destination.getApplicationServerHost());
+            System.out.println(destination.getSystemNumber());
+            System.out.println(destination.getClient());
+            System.out.println(destination.getUser());
+            System.out.println(destination.getLanguage());
 
             destination.ping();
 
