@@ -1,6 +1,6 @@
 jco.client.ashost=192.168.194.18
-jco.client.sysnr=33
-jco.client.client=02
+jco.client.client=300
+jco.client.sysnr=02
 jco.client.user=GNEXUMUSER
-jco.client.passwd=
-jco.client.lang=EN
+jco.client.passwd=Copa@1234567
+jco.client.lang=PT
